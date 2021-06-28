@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -58,7 +59,7 @@
             <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
             <div class="row">
                 <div class="col-sm-5">
-                    <form action="">
+                    <form action="" id="form-1">
                         <label for="select">Select Your Flavor</label>
                         <select class="browser-default custom-select custom-select-md mb-3 name">
                         <option value="Chicken Tikka">Chicken Tikka</option>
@@ -135,9 +136,9 @@
                             <p id="addedprice">Delivery will cost sh. 150</p>
                             <p id="finalmessage"></p>
                         </div>
-                        <!-- <button class="btn btn-orange addPizza">Add Pizza</button>
+                         <button class="btn btn-orange addPizza">Add Pizza</button>
                         <button class="btn btn-orange" id="checkout">Checkout</button>
-                        <button class="btn btn-orange deliver">Home delivery?</button> -->
+                        <button class="btn btn-orange deliver">Home delivery?</button> 
                     </div>
                     <div class="delivery">
                         <form action="">
@@ -145,7 +146,7 @@
                                 <input type="text" id="name" class="form-control mb-3" placeholder="Name">
                                 <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
                                 <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                                <button class="btn btn-orange" id="final-order">Place Order</button>
+                                <button type="submit" class="btn btn-orange" id="final-order">Place Order</button>
                             </div>
                         </form>
                     </div>
