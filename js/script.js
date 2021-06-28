@@ -10,6 +10,9 @@ function Getpizza(name, size, crust, topping, total) {
 }
 
 $(document).ready(function() {
+    $('#form-1').submit(function(event){
+        event.preventDefault();
+
     $("button.proceed").click(function(event) {
         let pname = $(".name option:selected").val();
         let psize = $("#size option:selected").val();
@@ -193,6 +196,7 @@ $(document).ready(function() {
                 $("button#final-order").show();
             }
         });
-        event.preventDefault();
+        
     });
+});
 });
